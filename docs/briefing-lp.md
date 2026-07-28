@@ -1,6 +1,6 @@
 # Briefing — Landing Page Dr. Matheus Cavalcanti
 
-- Público: pessoas em Brasília que buscam avaliação ortopédica e manejo da dor, em especial diante de limitações de mobilidade e desconforto persistente.
+- Público: adultos em Brasília que buscam avaliação ortopédica diante de dor musculoesquelética persistente, rigidez ou limitação de mobilidade.
 - Momento de decisão: busca ativa por atendimento e confirmação de possibilidade de convênio.
 - Promessa: cuidado ortopédico individualizado, com clareza na avaliação e nas opções clínicas discutidas.
 - Provas verificáveis: CRM-DF 29142; RQE Ortopedia e Traumatologia 26084; atendimento na Clínica Salus, Asa Norte; tratamentos e informações públicas do site do médico.
@@ -13,9 +13,10 @@
 
 | Seção | Função | Referências | Decisão |
 | --- | --- | --- | --- |
-| Hero | Contexto e ação inicial | `ref.site.dr-matheus`; `ref.drive.fotos-profissionais` | Retrato real em composição dividida, fundo verde profundo e tipografia editorial. |
-| Problema | Gerar reconhecimento | `ref.process.criacao-lp` | Quatro sinais em uma grade mínima com bordas, sem cards genéricos. |
-| Tratamentos | Explicar possibilidades | `ref.site.dr-matheus` | Lista indexada com descrições curtas e ritmo de editorial médico. |
-| Método | Reduzir insegurança | `ref.process.criacao-lp` | Sequência vertical de três passos e foto real em moldura assimétrica. |
-| Autoridade | Identificação profissional | `ref.drive.logo-palette` | Bloco escuro, monograma tipográfico e credenciais públicas. |
-| FAQ/CTA | Remover fricções | `ref.process.criacao-lp` | Acordeão nativo e fechamento de alto contraste. |
+| Hero | Contexto e ação inicial | `ref.site.dr-matheus`; `ref.drive.fotos-profissionais` | Composição clínica clara, headline orientada à mobilidade, foto real mais humana e CTA direto. |
+| Credenciais | Identificação profissional imediata | `ref.site.dr-matheus` | Faixa institucional com a palavra MÉDICO, CRM, RQE e local, sem estatísticas promocionais. |
+| Sintomas | Gerar reconhecimento | `ref.process.criacao-lp` | Entrada por regiões e situações que limitam a rotina, organizada em linhas editoriais. |
+| Método | Reduzir insegurança | `ref.process.criacao-lp` | Jornada de três etapas — escuta, investigação e decisão compartilhada — em bloco verde sólido. |
+| Tratamentos | Explicar possibilidades | `ref.site.dr-matheus` | Lista indexada com linguagem prudente e indicação condicionada à avaliação médica. |
+| Especialista | Construir confiança | `ref.drive.fotos-profissionais`; `ref.site.dr-matheus` | Foto documental, formação publicada e registros profissionais, sem alegações de superioridade. |
+| Logística/FAQ/CTA | Remover fricções | `ref.site.dr-matheus`; `ref.process.criacao-lp` | Endereço completo, acordeão nativo, confirmação de convênio e fechamento de alto contraste. |
