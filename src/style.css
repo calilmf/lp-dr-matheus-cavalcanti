@@ -542,10 +542,10 @@ h2 {
 }
 
 .region-list article {
-  min-height: 188px;
+  min-height: 208px;
   padding: 28px 28px 30px 0;
   display: grid;
-  grid-template-columns: 40px minmax(0, 1fr);
+  grid-template-columns: 66px minmax(0, 1fr);
   align-items: start;
   gap: 16px;
   border-top: 1px solid var(--line);
@@ -563,19 +563,18 @@ h2 {
 }
 
 .region-icon {
-  width: 38px;
-  height: 38px;
+  width: 58px;
+  height: 58px;
   display: grid;
   place-items: center;
   color: var(--olive);
-  background: rgba(57, 59, 35, 0.08);
-  border-radius: 50%;
-  transition: transform 220ms ease, color 220ms ease, background-color 220ms ease;
+  border-left: 1px solid rgba(57, 59, 35, 0.24);
+  transition: transform 220ms ease, color 220ms ease, background-color 220ms ease, border-color 220ms ease;
 }
 
 .health-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: block;
   background: currentColor;
   -webkit-mask: var(--health-icon) center / contain no-repeat;
@@ -593,6 +592,13 @@ h2 {
 .health-icon-syringe { --health-icon: url("https://cdn.jsdelivr.net/gh/resolvetosavelives/healthicons@36887b268d2cb61f8d91622ad459bdf07910c2b0/public/icons/svg/filled/devices/syringe.svg"); }
 .health-icon-pain { --health-icon: url("https://cdn.jsdelivr.net/gh/resolvetosavelives/healthicons@36887b268d2cb61f8d91622ad459bdf07910c2b0/public/icons/svg/filled/specialties/pain-managment.svg"); }
 .health-icon-blood { --health-icon: url("https://cdn.jsdelivr.net/gh/resolvetosavelives/healthicons@36887b268d2cb61f8d91622ad459bdf07910c2b0/public/icons/svg/filled/body/blood-drop.svg"); }
+
+.region-icon .health-icon-leg { width: 38px; height: 48px; }
+.region-icon .health-icon-joints { width: 42px; height: 42px; }
+.region-icon .health-icon-spine { width: 27px; height: 50px; }
+.region-icon .health-icon-body { width: 34px; height: 46px; }
+.region-icon .health-icon-arm { width: 40px; height: 46px; }
+.region-icon .health-icon-foot { width: 48px; height: 31px; }
 
 .region-list h3,
 .treatment-list h3,
@@ -621,6 +627,7 @@ h2 {
   .region-list article:hover .region-icon {
     color: var(--sand);
     background: var(--olive);
+    border-color: var(--olive);
     transform: rotate(-8deg) scale(1.08);
   }
 }
@@ -882,25 +889,26 @@ h2 {
   min-height: 176px;
   padding: 26px 0;
   display: grid;
-  grid-template-columns: 52px 0.85fr 1.15fr;
+  grid-template-columns: 72px 0.85fr 1.15fr;
   align-items: start;
   gap: 20px;
   border-bottom: 1px solid var(--line);
 }
 
 .treatment-icon {
-  width: 38px;
-  height: 38px;
+  width: 52px;
+  height: 52px;
   display: grid;
   place-items: center;
   color: var(--sand);
   background: var(--olive-dark);
-  border-radius: 50%;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px rgba(249, 247, 240, 0.16);
 }
 
 .treatment-icon .health-icon {
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
 }
 
 .treatment-list p {
@@ -1561,7 +1569,7 @@ footer p {
 
   .treatment-list article {
     min-height: 0;
-    grid-template-columns: 38px 1fr;
+    grid-template-columns: 64px 1fr;
     gap: 8px 12px;
   }
 
