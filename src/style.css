@@ -605,27 +605,121 @@ h2 {
 .region-icon .health-icon-arm { width: 40px; height: 46px; }
 .region-icon .health-icon-foot { width: 48px; height: 31px; }
 
-/* Skeletal sources: SVG Repo shoulder joint (CC0) and Wikimedia Commons pelvis (CC BY-SA 4.0). */
-.anatomy-icon {
+/* CSS anatomical glyphs: shoulder joint and a pelvic-girdle silhouette based on 2D medical icon references. */
+.css-anatomy-icon {
+  color: var(--ink);
+}
+
+.shoulder-glyph {
+  position: relative;
+  width: 45px;
+  height: 45px;
   display: block;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  filter: grayscale(1) sepia(0.22) saturate(0.9) contrast(1.18);
-  opacity: 0.9;
 }
 
-.anatomy-icon-shoulder {
+.shoulder-glyph::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 31px;
+  height: 11px;
+  border: 3px solid currentColor;
+  border-bottom: 0;
+  border-radius: 50% 54% 0 0;
+  transform: rotate(-9deg);
+}
+
+.shoulder-glyph::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  width: 22px;
+  height: 20px;
+  border: 3px solid currentColor;
+  border-radius: 58% 38% 52% 46%;
+  transform: rotate(-21deg);
+}
+
+.shoulder-joint {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  right: 3px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.shoulder-joint::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  width: 4px;
+  height: 18px;
+  border-radius: 4px;
+  background: currentColor;
+  transform: rotate(-19deg);
+  transform-origin: top;
+}
+
+.hip-glyph {
+  position: relative;
   width: 42px;
-  height: 42px;
+  height: 36px;
+  display: block;
 }
 
-.anatomy-icon-hip {
-  width: 43px;
-  height: 35px;
-  filter: grayscale(1) contrast(1.55) brightness(0.22);
-  opacity: 1;
+.hip-glyph::before,
+.hip-glyph::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 19px;
+  height: 25px;
+  border: 3px solid currentColor;
+  border-radius: 72% 44% 58% 48%;
 }
+
+.hip-glyph::before {
+  left: 0;
+  transform: rotate(16deg);
+}
+
+.hip-glyph::after {
+  right: 0;
+  transform: scaleX(-1) rotate(16deg);
+}
+
+.hip-sacrum {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 17px;
+  width: 8px;
+  height: 22px;
+  border-radius: 45% 45% 55% 55%;
+  background: currentColor;
+}
+
+.hip-sacrum::before,
+.hip-sacrum::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.hip-sacrum::before { left: -11px; }
+.hip-sacrum::after { right: -11px; }
 
 .region-list h3,
 .treatment-list h3,
