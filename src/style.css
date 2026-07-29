@@ -111,8 +111,8 @@ section[id] {
 
 .brand img {
   position: absolute;
-  top: -52px;
-  left: -21px;
+  top: -39px;
+  left: 0;
   width: 160px;
   height: 160px;
   max-width: none;
