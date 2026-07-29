@@ -1054,6 +1054,7 @@ footer {
 .footer-brand {
   position: relative;
   display: block;
+  justify-self: center;
   width: 155px;
   height: 80px;
   overflow: hidden;
@@ -1426,7 +1427,7 @@ footer p {
 
   .footer-brand {
     display: block;
-    margin-bottom: 26px;
+    margin: 0 auto 26px;
   }
 
   footer p {
