@@ -10,6 +10,7 @@
   --muted: #66685f;
   --line: rgba(38, 38, 28, 0.18);
   --sans: 'Manrope', Arial, sans-serif;
+  --display: 'Cormorant Garamond', Georgia, serif;
   --mono: 'Roboto Mono', Consolas, monospace;
   --gutter: clamp(24px, 6vw, 92px);
   --max: 1360px;
@@ -246,9 +247,11 @@ nav a:focus-visible {
   max-width: 620px;
   margin: 0;
   color: var(--olive-dark);
+  font-family: var(--display);
   font-size: clamp(45px, 4.4vw, 64px);
+  font-weight: 600;
   line-height: 1.02;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.04em;
 }
 
 .hero-lead {
@@ -530,9 +533,11 @@ nav a:focus-visible {
 h2 {
   margin: 0;
   color: var(--olive-dark);
+  font-family: var(--display);
   font-size: clamp(38px, 4.2vw, 60px);
+  font-weight: 600;
   line-height: 1.08;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.035em;
 }
 
 .region-list {
