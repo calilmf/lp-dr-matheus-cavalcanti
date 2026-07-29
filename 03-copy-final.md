@@ -4,13 +4,13 @@
 
 **Eyebrow:** Ortopedia e Traumatologia · Brasília
 
-**H1:** Ortopedista em Brasília para cuidar do que limita seu movimento.
+**H1:** Dor no joelho, ombro ou coluna?
 
-**Apoio:** Avaliação individualizada para compreender a origem da dor e definir, com clareza, as possibilidades de cuidado para o seu caso.
+**Apoio:** Consulte um ortopedista em Brasília para entender seu caso e discutir os próximos passos com clareza.
 
 **Prova:** MÉDICO · CRM-DF 29142 · RQE Ortopedia e Traumatologia 26084
 
-**CTAs:** Agendar avaliação ortopédica / Ver convênios atendidos
+**CTAs:** Agendar avaliação / Ver convênios atendidos
 
 ## Prova rápida
 
@@ -21,16 +21,29 @@
 
 ## Problema
 
-**H2:** O que está limitando seu movimento hoje?
+**H2:** Quando a dor começa a limitar sua rotina.
 
-- Joelho: dor ao caminhar, subir escadas, treinar ou após repouso.
+- Joelho: dor, inchaço, instabilidade ou dificuldade para caminhar e subir escadas.
 - Ombro: desconforto para elevar o braço, vestir-se, trabalhar ou dormir.
 - Coluna: dor cervical ou lombar que interfere na postura e nas atividades.
 - Outras articulações: rigidez, perda de mobilidade ou dor persistente.
 
+## Comorbidades e histórico
+
+**H2:** Comorbidades e histórico também importam.
+
+Na consulta, condições associadas são consideradas para entender riscos, limitações e possibilidades de cuidado.
+
+- Sobrepeso ou obesidade.
+- Diabetes.
+- Osteoporose.
+- Doenças reumatológicas.
+- Lesões ou cirurgias prévias.
+- Uso contínuo de medicamentos.
+
 ## Processo
 
-**H2:** Da queixa ao plano de cuidado, cada decisão precisa fazer sentido para você.
+**H2:** Do sintoma ao próximo passo, em quatro etapas.
 
 1. Contato e orientação inicial.
 2. Escuta e avaliação.
@@ -39,7 +52,7 @@
 
 ## Tratamentos
 
-**H2:** Recursos escolhidos a partir do diagnóstico, não de uma fórmula pronta.
+**H2:** Opções discutidas após avaliação.
 
 A indicação depende da avaliação médica, do quadro clínico e dos objetivos de cada paciente.
 
@@ -51,7 +64,7 @@ O cuidado começa por compreender o que a dor mudou na vida do paciente. A avali
 
 ## Convênios
 
-**H2:** Confirme a cobertura do seu plano antes de agendar.
+**H2:** Atende seu convênio?
 
 A disponibilidade e a autorização variam conforme plano, procedimento e unidade. A equipe confirma as possibilidades pelo WhatsApp.
 
@@ -63,7 +76,6 @@ Endereço, telefone, rota e respostas sobre consulta, documentos, convênio e in
 
 ## Fechamento
 
-**H2:** Entenda o que sua dor está pedindo.
+**H2:** Não deixe a dor limitar sua rotina.
 
 Converse com a equipe para confirmar disponibilidade, convênio e agendar sua avaliação ortopédica.
-

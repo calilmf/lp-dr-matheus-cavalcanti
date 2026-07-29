@@ -28,7 +28,7 @@ LP de Google Ads com uma ação primária: iniciar atendimento pelo WhatsApp. A 
 
 ## Arquitetura de conversão
 
-`header com CTA → hero orientado à busca → prova rápida → sintomas → CTA contextual → processo → tratamentos → médico → convênios → localização e FAQ → CTA final → footer médico`
+`header com CTA → hero orientado à busca → prova rápida → sintomas → CTA contextual → comorbidades e histórico → processo → tratamentos → médico → convênios → localização e FAQ → CTA final → footer médico`
 
 Essa espinha replica o padrão recorrente das LPs Pulso. A identidade visual continua específica do Dr. Matheus, conforme o processo `criacao-lp`, que não exige páginas visualmente iguais.
 
@@ -46,4 +46,3 @@ Essa espinha replica o padrão recorrente das LPs Pulso. A identidade visual con
 - Cliques de telefone e rota.
 - Abertura de FAQs relacionadas a consulta, convênio e infiltração.
 - Taxa de conversão por intenção/campanha no Google Ads e no Tintim.
-

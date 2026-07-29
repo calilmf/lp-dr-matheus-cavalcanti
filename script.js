@@ -90,7 +90,7 @@ function bindHeaderState() {
 function enableProgressiveReveal() {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const elements = document.querySelectorAll(
-    '.section-intro, .symptom-grid article, .care-path-heading, .steps li, .treatments-heading, .treatment-list article, .doctor-copy, .insurance-heading, .insurance-panel, .practical-heading, .location, .faq, .closing-copy',
+    '.section-intro, .symptom-grid article, .clinical-context-heading, .clinical-context-grid li, .care-path-heading, .steps li, .treatments-heading, .treatment-list article, .doctor-copy, .insurance-heading, .insurance-panel, .practical-heading, .location, .faq, .closing-copy',
   )
 
   if (reduceMotion || !('IntersectionObserver' in window)) {

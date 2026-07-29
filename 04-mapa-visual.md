@@ -14,6 +14,7 @@
 | Hero | Confirmar busca e gerar ação | `ref.brand.dr-matheus.drive` + `ref.web.hss.condition-first` | `pattern.hero.search-intent-photo` | Layout em duas colunas, retrato recortado com transparência e joelho 3D parcialmente ocluído para criar profundidade | Cortar o cabelo, deixar halo no recorte, competir com o rosto ou transformar anatomia em espetáculo |
 | Prova rápida | Reduzir insegurança | `ref.pulso.dra-lara.narrativa-medica` | `pattern.proof.four-items` | Quatro itens retos com ícones funcionais e dados verificáveis | Estatísticas inventadas ou cards decorativos |
 | Problema | Criar reconhecimento | `ref.web.hss.condition-first` | `pattern.problem.body-regions` | Grade de regiões com linhas editoriais | Lista extensa de diagnósticos sem contexto |
+| Contexto clínico | Qualificar a conversa | `ref.web.hss.condition-first` | `pattern.clinical-context.icon-bullets` | Seis bullets com ícones sobre comorbidades e histórico considerados na avaliação | Associar condição a diagnóstico, risco ou resultado garantido |
 | Processo | Explicar mecanismo | `ref.pulso.dra-lara.narrativa-medica` | `pattern.process.four-steps` | Faixa verde escura, quatro etapas numeradas | Sugerir que o processo garante resultado |
 | Tratamentos | Apresentar possibilidades | `ref.pulso.dr-thiago.convenios` | `pattern.services.indexed-list` | Lista de recursos, indicação e limites | Vender procedimento antes da avaliação |
 | Médico | Construir autoridade | `ref.brand.dr-matheus.drive` | `pattern.authority.documentary-split` | Foto real, formação e registros | Currículo inflado ou superlativos |
@@ -27,6 +28,6 @@
 - **Densidade:** média, com respiro e informação prática.
 - **Imagem:** `photo-7645.jpg` como origem do recorte transparente `hero-doctor-cutout.webp`; `photo-7547.jpg` na seção do médico.
 - **Elemento anatômico:** `hero-knee-model-v2.webp`, render 3D de joelho em alta resolução, marfim/areia, alpha transparente, decorativo e sem texto.
-- **Iconografia:** ícones lineares apenas na prova rápida e logística.
-- **Movimento:** giro tridimensional curto e flutuação lenta apenas no joelho; animação desativada por `prefers-reduced-motion`.
+- **Iconografia:** ícones lineares na prova rápida, contexto clínico e logística.
+- **Movimento:** giro tridimensional curto no joelho, relevo sutil nos bullets clínicos e revelação progressiva no scroll; animações desativadas por `prefers-reduced-motion`.
 - **Regra do CTA:** preservar verbo, destino, prioridade e tracking definidos na estratégia.
