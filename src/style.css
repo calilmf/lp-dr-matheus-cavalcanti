@@ -128,7 +128,7 @@ nav {
 
 nav a {
   color: #4d4f46;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -146,7 +146,7 @@ nav a:focus-visible {
   gap: 34px;
   padding: 0 20px;
   border: 1px solid transparent;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   transition: transform 180ms ease, background 180ms ease, color 180ms ease;
 }
@@ -223,7 +223,7 @@ nav a:focus-visible {
   gap: 12px;
   margin: 0 0 26px;
   color: var(--olive);
-  font: 500 10px/1.5 var(--mono);
+  font: 500 11px/1.5 var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -262,7 +262,7 @@ nav a:focus-visible {
 .hero-credentials {
   margin: 21px 0 0;
   color: var(--olive-soft);
-  font: 500 10px/1.65 var(--mono);
+  font: 500 11px/1.65 var(--mono);
   letter-spacing: 0.035em;
   text-transform: uppercase;
 }
@@ -285,7 +285,7 @@ nav a:focus-visible {
   padding: 8px 0;
   border-bottom: 1px solid var(--line);
   color: #4c4e46;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -307,7 +307,7 @@ nav a:focus-visible {
 .hero-note {
   margin: 31px 0 0;
   color: #77786f;
-  font: 400 10px/1.6 var(--mono);
+  font: 400 11px/1.6 var(--mono);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -435,12 +435,12 @@ nav a:focus-visible {
 .hero-caption strong {
   margin-bottom: 4px;
   color: var(--olive-dark);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .hero-caption span {
   color: #72736c;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -503,14 +503,14 @@ nav a:focus-visible {
 
 .quick-proof h3 {
   color: var(--olive-dark);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.35;
 }
 
 .quick-proof p {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -614,7 +614,7 @@ h2 {
 .region-list p {
   margin: 12px 0 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -636,7 +636,7 @@ h2 {
   max-width: 630px;
   margin: 32px 0 0 auto;
   color: #787a72;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -715,7 +715,7 @@ h2 {
   max-width: 410px;
   margin: 26px 0 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -749,7 +749,7 @@ h2 {
   gap: 13px;
   border-top: 1px solid rgba(38, 38, 28, 0.14);
   color: var(--olive-dark);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
   transition: padding 220ms ease, color 220ms ease;
@@ -853,7 +853,7 @@ h2 {
   max-width: 520px;
   margin: 12px 0 0;
   color: rgba(255, 255, 255, 0.68);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.65;
 }
 
@@ -914,7 +914,7 @@ h2 {
 .treatment-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -930,7 +930,7 @@ h2 {
 .treatment-cta p {
   max-width: 335px;
   color: var(--olive-dark);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -981,7 +981,7 @@ h2 {
   padding: 20px 22px;
   background: var(--olive);
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -997,7 +997,7 @@ h2 {
 .doctor-role {
   margin: 0 0 34px;
   color: var(--olive-soft);
-  font: 500 11px/1.5 var(--mono);
+  font: 500 12px/1.5 var(--mono);
   letter-spacing: 0.045em;
   text-transform: uppercase;
 }
@@ -1029,7 +1029,7 @@ h2 {
 .doctor-registers dt,
 .doctor-registers dd {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -1050,7 +1050,7 @@ h2 {
   max-width: 520px;
   margin: 25px 0 30px;
   color: #626159;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -1073,7 +1073,7 @@ h2 {
   padding: 16px 12px 14px 0;
   border-bottom: 1px solid rgba(38, 38, 28, 0.22);
   color: var(--olive-dark);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -1085,13 +1085,13 @@ h2 {
 .insurance-note {
   margin: 23px 0 0;
   color: #6b685f;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.65;
 }
 
 .doctor-registers dt {
   color: var(--olive-soft);
-  font: 500 10px/1.5 var(--mono);
+  font: 500 11px/1.5 var(--mono);
 }
 
 .doctor-registers dd {
@@ -1119,7 +1119,7 @@ h2 {
 .micro-label {
   margin: 0 0 20px;
   color: var(--olive-soft);
-  font: 500 10px/1.5 var(--mono);
+  font: 500 11px/1.5 var(--mono);
   letter-spacing: 0.07em;
 }
 
@@ -1131,7 +1131,7 @@ h2 {
 .location address {
   margin: 28px 0 30px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.75;
 }
@@ -1146,7 +1146,7 @@ h2 {
 .location-phone {
   margin-top: 4px;
   color: var(--olive-dark);
-  font: 500 12px/1.6 var(--mono);
+  font: 500 13px/1.6 var(--mono);
   border-bottom: 1px solid var(--line);
 }
 
@@ -1191,7 +1191,7 @@ h2 {
   max-width: 680px;
   margin: -5px 45px 25px 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.75;
 }
 
@@ -1229,7 +1229,7 @@ h2 {
 .phone {
   border-bottom: 1px solid rgba(255, 255, 255, 0.45);
   color: rgba(255, 255, 255, 0.82);
-  font: 400 12px/1.7 var(--mono);
+  font: 400 13px/1.7 var(--mono);
 }
 
 footer {
@@ -1263,7 +1263,7 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.65;
 }
 
@@ -1387,7 +1387,7 @@ footer p {
   }
 
   .hero-credentials {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .hero-actions {
@@ -1608,7 +1608,7 @@ footer p {
     right: -20px;
     bottom: 28px;
     width: 235px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .insurance {
@@ -1670,7 +1670,7 @@ footer p {
     justify-content: space-between;
     background: var(--sand);
     color: var(--olive-dark);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     box-shadow: 0 -8px 24px rgba(38, 38, 28, 0.11);
   }
