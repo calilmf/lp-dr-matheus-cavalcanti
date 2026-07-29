@@ -1746,8 +1746,183 @@ footer p {
     box-shadow: 0 -8px 24px rgba(38, 38, 28, 0.11);
   }
 
-  .mobile-cta span {
+.mobile-cta span {
     font-size: 21px;
+  }
+}
+
+/* Editorial grouping replaces repetitive card and bullet patterns. */
+.region-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.region-group {
+  padding: 30px 42px 20px 0;
+}
+
+.region-group + .region-group {
+  padding-right: 0;
+  padding-left: 42px;
+  border-left: 1px solid var(--line);
+}
+
+.region-group .micro-label {
+  margin-bottom: 14px;
+}
+
+.region-list .region-group article {
+  min-height: 0;
+  padding: 21px 0;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 14px;
+  border: 0;
+  border-top: 1px solid rgba(38, 38, 28, 0.12);
+}
+
+.region-list .region-group article:first-of-type {
+  border-top: 0;
+}
+
+.region-list .region-group article:nth-child(3n + 2),
+.region-list .region-group article:nth-child(3n + 3),
+.region-list .region-group article:nth-last-child(-n + 3) {
+  padding-left: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.region-list .region-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.region-list .region-icon .health-icon-leg { width: 31px; height: 39px; }
+.region-list .region-icon .health-icon-joints { width: 27px; height: 27px; }
+.region-list .region-icon .health-icon-spine { width: 22px; height: 40px; }
+.region-list .region-icon .health-icon-arm { width: 33px; height: 38px; }
+.region-list .region-icon .health-icon-foot { width: 38px; height: 25px; }
+
+.clinical-statement {
+  min-height: 135px;
+  margin: 0;
+  padding: 22px 0 10px;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 14px;
+  border-top: 1px solid rgba(38, 38, 28, 0.14);
+  color: var(--olive-dark);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.clinical-statement i {
+  margin-top: 4px;
+  color: var(--olive-soft);
+  font-size: 20px;
+}
+
+.treatment-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 56px;
+  border-top: 0;
+}
+
+.treatment-cluster {
+  border-top: 1px solid var(--line);
+}
+
+.treatment-cluster .micro-label {
+  margin: 18px 0 14px;
+}
+
+.treatment-list .treatment-cluster article {
+  min-height: 0;
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.treatment-list .treatment-cluster article + article {
+  border-top: 1px solid rgba(38, 38, 28, 0.12);
+}
+
+.treatment-list .treatment-cluster article > div {
+  display: block;
+}
+
+.treatment-list .treatment-cluster h3 {
+  font-size: 20px;
+}
+
+.treatment-list .treatment-cluster p:not(.micro-label) {
+  margin-top: 8px;
+}
+
+.treatment-list .treatment-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.treatment-list .treatment-icon .health-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.treatment-cta {
+  grid-column: 1 / -1;
+  margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+  .region-group {
+    padding-right: 26px;
+  }
+
+  .region-group + .region-group {
+    padding-left: 26px;
+  }
+
+  .treatment-list {
+    gap: 0 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .region-list {
+    display: block;
+  }
+
+  .region-group,
+  .region-group + .region-group {
+    padding: 24px 0 6px;
+    border-left: 0;
+  }
+
+  .region-group + .region-group {
+    border-top: 1px solid var(--line);
+  }
+
+  .region-list .region-group article {
+    padding: 18px 0;
+  }
+
+  .clinical-statement {
+    min-height: 0;
+    font-size: 15px;
+  }
+
+  .treatment-list {
+    display: block;
+  }
+
+  .treatment-cluster + .treatment-cluster {
+    margin-top: 30px;
   }
 }
 
