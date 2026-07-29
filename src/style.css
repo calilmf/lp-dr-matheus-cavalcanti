@@ -9,9 +9,9 @@
   --ink: #24251f;
   --muted: #66685f;
   --line: rgba(38, 38, 28, 0.18);
-  --sans: 'Manrope', Arial, sans-serif;
-  --display: 'Cormorant Garamond', Georgia, serif;
-  --mono: 'Roboto Mono', Consolas, monospace;
+  --sans: 'General Sans', Arial, sans-serif;
+  --display: 'Cabinet Grotesk', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
   --gutter: clamp(24px, 6vw, 92px);
   --max: 1360px;
 }
@@ -251,7 +251,7 @@ nav a:focus-visible {
   font-size: clamp(45px, 4.4vw, 64px);
   font-weight: 600;
   line-height: 1.02;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.052em;
 }
 
 .hero-lead {
@@ -537,7 +537,7 @@ h2 {
   font-size: clamp(38px, 4.2vw, 60px);
   font-weight: 600;
   line-height: 1.08;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.045em;
 }
 
 .region-list {
