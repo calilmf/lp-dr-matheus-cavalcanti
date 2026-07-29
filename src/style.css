@@ -412,7 +412,7 @@ nav a:focus-visible {
   opacity: 0.68;
   backface-visibility: hidden;
   filter: drop-shadow(0 26px 28px rgba(38, 38, 28, 0.24)) drop-shadow(0 0 1px rgba(38, 38, 28, 0.26));
-  transform: translateZ(20px);
+  transform: translateZ(20px) scaleX(-1);
 }
 
 .hero-caption {
