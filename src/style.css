@@ -605,7 +605,7 @@ h2 {
 .region-icon .health-icon-arm { width: 40px; height: 46px; }
 .region-icon .health-icon-foot { width: 48px; height: 31px; }
 
-/* Skeletal sources: Wikimedia Commons — shoulder girdle (public domain) and pelvis (CC BY-SA 4.0). */
+/* Skeletal sources: SVG Repo shoulder joint (CC0) and Wikimedia Commons pelvis (CC BY-SA 4.0). */
 .anatomy-icon {
   display: block;
   max-width: 100%;
@@ -616,13 +616,15 @@ h2 {
 }
 
 .anatomy-icon-shoulder {
-  width: 52px;
-  height: 47px;
+  width: 42px;
+  height: 42px;
 }
 
 .anatomy-icon-hip {
-  width: 54px;
-  height: 44px;
+  width: 43px;
+  height: 35px;
+  filter: grayscale(1) contrast(1.55) brightness(0.22);
+  opacity: 1;
 }
 
 .region-list h3,
