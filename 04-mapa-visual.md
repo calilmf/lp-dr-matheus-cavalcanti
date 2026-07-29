@@ -28,6 +28,6 @@
 - **Densidade:** média, com respiro e informação prática.
 - **Imagem:** `photo-7645.jpg` como origem do recorte transparente `hero-doctor-cutout.webp`; `photo-7547.jpg` na seção do médico.
 - **Elemento anatômico:** `hero-knee-model-v2.webp`, render 3D de joelho em alta resolução, marfim/areia, alpha transparente, decorativo e sem texto.
-- **Iconografia:** ícones lineares na prova rápida, contexto clínico e logística.
+- **Iconografia:** prova rápida preserva ícones lineares; regiões, contexto clínico e etapas usam ícones preenchidos do Font Awesome Free para maior presença visual.
 - **Movimento:** giro tridimensional curto no joelho, relevo sutil nos bullets clínicos e revelação progressiva no scroll; animações desativadas por `prefers-reduced-motion`.
 - **Regra do CTA:** preservar verbo, destino, prioridade e tracking definidos na estratégia.

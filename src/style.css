@@ -572,7 +572,11 @@ h2 {
 .region-list i {
   width: 26px;
   height: 26px;
+  display: grid;
+  place-items: center;
   color: var(--olive);
+  font-size: 23px;
+  line-height: 1;
   stroke-width: 1.55;
   transition: transform 220ms ease, color 220ms ease;
 }
@@ -601,7 +605,8 @@ h2 {
     transform: translateY(-4px);
   }
 
-  .region-list article:hover svg {
+  .region-list article:hover svg,
+  .region-list article:hover i {
     color: var(--sand);
     transform: rotate(-8deg) scale(1.08);
   }
@@ -739,7 +744,11 @@ h2 {
   width: 21px;
   height: 21px;
   flex: 0 0 21px;
+  display: grid;
+  place-items: center;
   color: var(--olive-soft);
+  font-size: 18px;
+  line-height: 1;
   stroke-width: 1.65;
   transition: transform 220ms ease, color 220ms ease;
 }
@@ -750,7 +759,8 @@ h2 {
     color: var(--olive);
   }
 
-  .clinical-context-group li:hover svg {
+  .clinical-context-group li:hover svg,
+  .clinical-context-group li:hover i {
     color: var(--sand);
     transform: rotate(-8deg) scale(1.08);
   }
@@ -809,6 +819,10 @@ h2 {
 .step-marker i {
   width: 22px;
   height: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  line-height: 1;
   stroke-width: 1.55;
 }
 
