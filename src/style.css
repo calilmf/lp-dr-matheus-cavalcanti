@@ -1153,13 +1153,6 @@ h2 {
   border-left: 1px solid rgba(38, 38, 28, 0.22);
 }
 
-.insurance-note {
-  margin: 23px 0 0;
-  color: #6b685f;
-  font-size: 12px;
-  line-height: 1.65;
-}
-
 .doctor-registers dt {
   color: var(--olive-soft);
   font: 500 11px/1.5 var(--mono);
