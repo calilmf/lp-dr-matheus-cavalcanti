@@ -11,7 +11,7 @@
 | Seção | Função | Referências visuais | Padrão aplicado | Decisão de interface | Risco a evitar |
 | --- | --- | --- | --- | --- | --- |
 | Header | Navegação e ação persistente | `ref.pulso.dr-gustavo.anatomia-conversao` | `pattern.header.sticky-cta` | Fundo claro, logo oficial e CTA contornado | Header alto, menu excessivo ou logo ilegível |
-| Hero | Confirmar busca e gerar ação | `ref.brand.dr-matheus.drive` + `ref.web.hss.condition-first` | `pattern.hero.search-intent-photo` | Layout claro em duas colunas, foto real e prova antes do CTA | Retrato de celebridade, headline vaga ou promessa de resultado |
+| Hero | Confirmar busca e gerar ação | `ref.brand.dr-matheus.drive` + `ref.web.hss.condition-first` | `pattern.hero.search-intent-photo` | Layout em duas colunas, retrato real sobre fundo grafite e joelho 3D parcialmente ocluído para criar profundidade | Cortar o cabelo, usar fundo branco chapado, competir com o rosto ou transformar anatomia em espetáculo |
 | Prova rápida | Reduzir insegurança | `ref.pulso.dra-lara.narrativa-medica` | `pattern.proof.four-items` | Quatro itens retos com ícones funcionais e dados verificáveis | Estatísticas inventadas ou cards decorativos |
 | Problema | Criar reconhecimento | `ref.web.hss.condition-first` | `pattern.problem.body-regions` | Grade de regiões com linhas editoriais | Lista extensa de diagnósticos sem contexto |
 | Processo | Explicar mecanismo | `ref.pulso.dra-lara.narrativa-medica` | `pattern.process.four-steps` | Faixa verde escura, quatro etapas numeradas | Sugerir que o processo garante resultado |
@@ -25,8 +25,8 @@
 
 - **Tom:** clínico claro, humano e preciso.
 - **Densidade:** média, com respiro e informação prática.
-- **Imagem:** fotografia real do médico; sem banco genérico ou recorte artificial.
+- **Imagem:** `photo-7540.jpg` no hero, com cabeça preservada e fundo grafite; `photo-7547.jpg` na seção do médico.
+- **Elemento anatômico:** `hero-knee-3d.webp`, render original de joelho em marfim/areia, alpha transparente, decorativo e sem texto.
 - **Iconografia:** ícones lineares apenas na prova rápida e logística.
-- **Movimento:** transições discretas, com respeito a `prefers-reduced-motion`.
+- **Movimento:** flutuação/rotação lenta apenas no joelho 3D; animação desativada por `prefers-reduced-motion`.
 - **Regra do CTA:** preservar verbo, destino, prioridade e tracking definidos na estratégia.
-

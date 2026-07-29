@@ -24,10 +24,13 @@
 
 - [x] HTML semântico, navegação por âncoras e link de salto para o conteúdo.
 - [x] Imagens principais com dimensões, texto alternativo e carregamento apropriado.
+- [x] Retrato do hero com respiro acima da cabeça e fundo grafite integrado à composição.
+- [x] Elemento ortopédico 3D otimizado em WebP transparente, sem bloquear interação.
 - [x] Metadados Open Graph, Twitter, canonical, favicon e JSON-LD de médico/FAQ.
 - [x] Preview protegido com `noindex, follow`.
 - [x] Layout responsivo com CTA persistente em telas menores.
 - [x] Respeito a `prefers-reduced-motion`.
+- [x] Animação decorativa limitada a `transform`, sem WebGL ou dependência adicional.
 - [x] `npm run build` concluído sem erros.
 - [x] JSON-LD parseado sem erros.
 - [x] Bundles de CSS e JavaScript gerados com caminhos compatíveis com GitHub Pages.
