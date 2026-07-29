@@ -599,72 +599,15 @@ h2 {
 .health-icon-blood { --health-icon: url("https://cdn.jsdelivr.net/gh/resolvetosavelives/healthicons@36887b268d2cb61f8d91622ad459bdf07910c2b0/public/icons/svg/filled/body/blood-drop.svg"); }
 
 .region-icon .health-icon-leg { width: 38px; height: 48px; }
-.region-icon .health-icon-joints { width: 42px; height: 42px; }
+.region-icon .health-icon-joints { width: 31px; height: 31px; }
 .region-icon .health-icon-spine { width: 27px; height: 50px; }
 .region-icon .health-icon-body { width: 34px; height: 46px; }
 .region-icon .health-icon-arm { width: 40px; height: 46px; }
 .region-icon .health-icon-foot { width: 48px; height: 31px; }
 
-/* CSS anatomical glyphs: shoulder joint and a pelvic-girdle silhouette based on 2D medical icon references. */
+/* CSS anatomical glyph: a pelvic-girdle silhouette based on 2D medical icon references. */
 .css-anatomy-icon {
   color: var(--ink);
-}
-
-.shoulder-glyph {
-  position: relative;
-  width: 45px;
-  height: 45px;
-  display: block;
-}
-
-.shoulder-glyph::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 5px;
-  width: 31px;
-  height: 11px;
-  border: 3px solid currentColor;
-  border-bottom: 0;
-  border-radius: 50% 54% 0 0;
-  transform: rotate(-9deg);
-}
-
-.shoulder-glyph::after {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 4px;
-  width: 22px;
-  height: 20px;
-  border: 3px solid currentColor;
-  border-radius: 58% 38% 52% 46%;
-  transform: rotate(-21deg);
-}
-
-.shoulder-joint {
-  position: absolute;
-  z-index: 1;
-  top: 18px;
-  right: 3px;
-  width: 14px;
-  height: 14px;
-  border: 3px solid currentColor;
-  border-radius: 50%;
-  background: var(--paper);
-}
-
-.shoulder-joint::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 3px;
-  width: 4px;
-  height: 18px;
-  border-radius: 4px;
-  background: currentColor;
-  transform: rotate(-19deg);
-  transform-origin: top;
 }
 
 .hip-glyph {
@@ -672,6 +615,8 @@ h2 {
   width: 42px;
   height: 36px;
   display: block;
+  transform: scale(0.76);
+  transform-origin: center;
 }
 
 .hip-glyph::before,
