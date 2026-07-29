@@ -44,10 +44,10 @@ Na consulta, condições associadas são consideradas para entender riscos, limi
 
 **H2:** Do sintoma ao próximo passo, em quatro etapas.
 
-1. Contato e orientação inicial.
-2. Escuta e avaliação.
-3. Investigação clínica.
-4. Decisão compartilhada.
+- Contato e orientação inicial.
+- Escuta e avaliação.
+- Investigação clínica.
+- Decisão compartilhada.
 
 ## Tratamentos
 

@@ -545,9 +545,9 @@ h2 {
   min-height: 188px;
   padding: 28px 28px 30px 0;
   display: grid;
-  grid-template-columns: 27px 37px minmax(0, 1fr);
+  grid-template-columns: 40px minmax(0, 1fr);
   align-items: start;
-  gap: 12px;
+  gap: 16px;
   border-top: 1px solid var(--line);
   transition: color 220ms ease, transform 220ms ease;
 }
@@ -562,20 +562,16 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
-.region-index,
-.treatment-list article > span {
-  color: var(--olive-soft);
-  font: 500 10px/1.5 var(--mono);
-}
-
 .region-list svg,
 .region-list i {
-  width: 26px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
   display: grid;
   place-items: center;
   color: var(--olive);
-  font-size: 23px;
+  background: rgba(57, 59, 35, 0.08);
+  border-radius: 50%;
+  font-size: 17px;
   line-height: 1;
   stroke-width: 1.55;
   transition: transform 220ms ease, color 220ms ease;
@@ -808,27 +804,20 @@ h2 {
 }
 
 .step-marker {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
   color: var(--sand);
+  border: 1px solid rgba(198, 181, 163, 0.46);
+  border-radius: 50%;
 }
 
 .step-marker svg,
 .step-marker i {
-  width: 22px;
-  height: 22px;
-  display: grid;
-  place-items: center;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1;
   stroke-width: 1.55;
-}
-
-.step-marker b {
-  font: 500 10px/1.5 var(--mono);
-  font-weight: 500;
 }
 
 .steps h3 {
@@ -880,6 +869,21 @@ h2 {
   align-items: start;
   gap: 20px;
   border-bottom: 1px solid var(--line);
+}
+
+.treatment-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: var(--sand);
+  background: var(--olive-dark);
+  border-radius: 50%;
+}
+
+.treatment-icon i {
+  font-size: 16px;
+  line-height: 1;
 }
 
 .treatment-list p {
