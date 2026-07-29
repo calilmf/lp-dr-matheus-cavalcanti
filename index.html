@@ -231,37 +231,57 @@
 
       <section class="section symptoms" id="sintomas">
         <div class="section-intro">
-          <p class="eyebrow eyebrow-dark"><span></span> Sinais que merecem atenção</p>
-          <h2>Quando a dor começa a limitar sua rotina.</h2>
+          <p class="eyebrow eyebrow-dark"><span></span> Regiões atendidas</p>
+          <h2>Em quais regiões a dor aparece?</h2>
         </div>
 
-        <div class="symptom-grid">
+        <div class="region-list">
           <article>
-            <span class="symptom-number">01</span>
+            <span class="region-index">01</span>
+            <i data-lucide="activity" aria-hidden="true"></i>
             <div>
               <h3>Joelho</h3>
               <p>Dor, inchaço, instabilidade ou dificuldade para caminhar e subir escadas.</p>
             </div>
           </article>
           <article>
-            <span class="symptom-number">02</span>
+            <span class="region-index">02</span>
+            <i data-lucide="move" aria-hidden="true"></i>
             <div>
               <h3>Ombro</h3>
               <p>Dificuldade para elevar o braço, vestir-se, trabalhar ou dormir.</p>
             </div>
           </article>
           <article>
-            <span class="symptom-number">03</span>
+            <span class="region-index">03</span>
+            <i data-lucide="scan-line" aria-hidden="true"></i>
             <div>
               <h3>Coluna</h3>
               <p>Dor cervical ou lombar que interfere na postura e nas atividades do dia.</p>
             </div>
           </article>
           <article>
-            <span class="symptom-number">04</span>
+            <span class="region-index">04</span>
+            <i data-lucide="circle-dot" aria-hidden="true"></i>
             <div>
-              <h3>Outras articulações</h3>
-              <p>Rigidez, perda de mobilidade ou dor persistente em outras regiões.</p>
+              <h3>Quadril</h3>
+              <p>Dor ao caminhar, sentar, levantar ou permanecer em uma mesma posição.</p>
+            </div>
+          </article>
+          <article>
+            <span class="region-index">05</span>
+            <i data-lucide="hand" aria-hidden="true"></i>
+            <div>
+              <h3>Punho e mão</h3>
+              <p>Dor, formigamento, perda de força ou limitação para atividades manuais.</p>
+            </div>
+          </article>
+          <article>
+            <span class="region-index">06</span>
+            <i data-lucide="footprints" aria-hidden="true"></i>
+            <div>
+              <h3>Pé e tornozelo</h3>
+              <p>Dor, entorses, instabilidade ou dificuldade para apoiar o peso do corpo.</p>
             </div>
           </article>
         </div>
@@ -288,32 +308,24 @@
           <p>Na consulta, condições associadas são consideradas para entender riscos, limitações e possibilidades de cuidado.</p>
         </div>
 
-        <ul class="clinical-context-grid">
-          <li>
-            <i data-lucide="weight" aria-hidden="true"></i>
-            <div><h3>Sobrepeso ou obesidade</h3><p>Podem aumentar a sobrecarga nas articulações.</p></div>
-          </li>
-          <li>
-            <i data-lucide="droplets" aria-hidden="true"></i>
-            <div><h3>Diabetes</h3><p>Deve ser considerada no planejamento clínico.</p></div>
-          </li>
-          <li>
-            <i data-lucide="shield-plus" aria-hidden="true"></i>
-            <div><h3>Osteoporose</h3><p>Ajuda a orientar a investigação de dor e fragilidade óssea.</p></div>
-          </li>
-          <li>
-            <i data-lucide="heart-pulse" aria-hidden="true"></i>
-            <div><h3>Doenças reumatológicas</h3><p>Podem mudar a leitura dos sintomas articulares.</p></div>
-          </li>
-          <li>
-            <i data-lucide="history" aria-hidden="true"></i>
-            <div><h3>Lesões ou cirurgias prévias</h3><p>Fazem parte da história clínica do caso.</p></div>
-          </li>
-          <li>
-            <i data-lucide="pill" aria-hidden="true"></i>
-            <div><h3>Uso contínuo de medicamentos</h3><p>Também deve ser relatado durante a consulta.</p></div>
-          </li>
-        </ul>
+        <div class="clinical-context-groups">
+          <section class="clinical-context-group" aria-labelledby="conditions-title">
+            <p class="micro-label" id="conditions-title">CONDIÇÕES ASSOCIADAS</p>
+            <ul>
+              <li><i data-lucide="droplets" aria-hidden="true"></i><span>Diabetes</span></li>
+              <li><i data-lucide="shield-plus" aria-hidden="true"></i><span>Osteoporose</span></li>
+              <li><i data-lucide="heart-pulse" aria-hidden="true"></i><span>Doenças reumatológicas</span></li>
+            </ul>
+          </section>
+          <section class="clinical-context-group" aria-labelledby="history-title">
+            <p class="micro-label" id="history-title">HISTÓRICO E ROTINA</p>
+            <ul>
+              <li><i data-lucide="weight" aria-hidden="true"></i><span>Sobrepeso ou obesidade</span></li>
+              <li><i data-lucide="history" aria-hidden="true"></i><span>Lesões ou cirurgias prévias</span></li>
+              <li><i data-lucide="pill" aria-hidden="true"></i><span>Uso contínuo de medicamentos</span></li>
+            </ul>
+          </section>
+        </div>
       </section>
 
       <section class="care-path" id="como-funciona">
@@ -324,28 +336,28 @@
 
         <ol class="steps">
           <li>
-            <span>01</span>
+            <span class="step-marker"><i data-lucide="message-circle" aria-hidden="true"></i><b>01</b></span>
             <div>
               <h3>Contato e orientação inicial</h3>
               <p>A equipe confirma disponibilidade, convênio e local pelo WhatsApp.</p>
             </div>
           </li>
           <li>
-            <span>02</span>
+            <span class="step-marker"><i data-lucide="stethoscope" aria-hidden="true"></i><b>02</b></span>
             <div>
               <h3>Escuta e avaliação</h3>
               <p>Entendimento da queixa, da rotina e do impacto da dor.</p>
             </div>
           </li>
           <li>
-            <span>03</span>
+            <span class="step-marker"><i data-lucide="search-check" aria-hidden="true"></i><b>03</b></span>
             <div>
               <h3>Investigação clínica</h3>
               <p>Exame físico e análise de exames quando necessários.</p>
             </div>
           </li>
           <li>
-            <span>04</span>
+            <span class="step-marker"><i data-lucide="route" aria-hidden="true"></i><b>04</b></span>
             <div>
               <h3>Decisão compartilhada</h3>
               <p>Explicação das opções, indicações e limites do seu caso.</p>

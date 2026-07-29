@@ -535,42 +535,49 @@ h2 {
   letter-spacing: -0.045em;
 }
 
-.symptom-grid {
-  margin-top: 82px;
+.region-list {
+  margin-top: 76px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.symptom-grid article {
-  min-height: 205px;
-  padding: 31px 36px 31px 0;
+.region-list article {
+  min-height: 188px;
+  padding: 28px 28px 30px 0;
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 27px 37px minmax(0, 1fr);
+  align-items: start;
   gap: 12px;
+  border-top: 1px solid var(--line);
+  transition: color 220ms ease, transform 220ms ease;
+}
+
+.region-list article:nth-child(3n + 2),
+.region-list article:nth-child(3n + 3) {
+  padding-left: 28px;
+  border-left: 1px solid var(--line);
+}
+
+.region-list article:nth-last-child(-n + 3) {
   border-bottom: 1px solid var(--line);
 }
 
-.symptom-grid article:nth-child(odd) {
-  border-right: 1px solid var(--line);
-}
-
-.symptom-grid article:nth-child(even) {
-  padding-left: 38px;
-}
-
-.symptom-grid article:nth-last-child(-n + 2) {
-  border-bottom: 0;
-}
-
-.symptom-number,
+.region-index,
 .treatment-list article > span {
   color: var(--olive-soft);
   font: 500 10px/1.5 var(--mono);
 }
 
-.symptom-grid h3,
+.region-list svg,
+.region-list i {
+  width: 26px;
+  height: 26px;
+  color: var(--olive);
+  stroke-width: 1.55;
+  transition: transform 220ms ease, color 220ms ease;
+}
+
+.region-list h3,
 .treatment-list h3,
 .steps h3,
 .location h3 {
@@ -581,12 +588,23 @@ h2 {
   letter-spacing: -0.025em;
 }
 
-.symptom-grid p {
-  max-width: 390px;
-  margin: 14px 0 0;
+.region-list p {
+  margin: 12px 0 0;
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (hover: hover) {
+  .region-list article:hover {
+    color: var(--olive);
+    transform: translateY(-4px);
+  }
+
+  .region-list article:hover svg {
+    color: var(--sand);
+    transform: rotate(-8deg) scale(1.08);
+  }
 }
 
 .section-footnote {
@@ -658,7 +676,7 @@ h2 {
 }
 
 .clinical-context-heading,
-.clinical-context-grid {
+.clinical-context-groups {
   position: relative;
   z-index: 1;
 }
@@ -676,71 +694,65 @@ h2 {
   line-height: 1.7;
 }
 
-.clinical-context-grid {
+.clinical-context-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(30px, 5vw, 70px);
+  align-self: start;
+}
+
+.clinical-context-group {
+  border-top: 1px solid rgba(38, 38, 28, 0.34);
+}
+
+.clinical-context-group .micro-label {
+  margin: 18px 0 16px;
+  color: var(--olive);
+}
+
+.clinical-context-group ul {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
   list-style: none;
-  border: 1px solid rgba(38, 38, 28, 0.16);
-  background: rgba(38, 38, 28, 0.16);
-  perspective: 1000px;
 }
 
-.clinical-context-grid li {
-  min-height: 174px;
-  padding: 24px 22px;
-  display: grid;
-  grid-template-columns: 38px 1fr;
-  align-items: start;
-  gap: 15px;
-  background: rgba(255, 254, 250, 0.9);
-  transition: transform 280ms ease, background 280ms ease, box-shadow 280ms ease;
-}
-
-.clinical-context-grid svg,
-.clinical-context-grid i {
-  width: 31px;
-  height: 31px;
-  padding: 7px;
-  color: var(--sand);
-  background: var(--olive-dark);
-  stroke-width: 1.7;
-  transition: transform 280ms ease, color 280ms ease, background 280ms ease;
-}
-
-.clinical-context-grid h3,
-.clinical-context-grid p {
-  margin: 0;
-}
-
-.clinical-context-grid h3 {
+.clinical-context-group li {
+  min-height: 60px;
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid rgba(38, 38, 28, 0.14);
   color: var(--olive-dark);
   font-size: 14px;
-  line-height: 1.35;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: padding 220ms ease, color 220ms ease;
 }
 
-.clinical-context-grid p {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.55;
+.clinical-context-group li:last-child {
+  border-bottom: 1px solid rgba(38, 38, 28, 0.14);
+}
+
+.clinical-context-group svg,
+.clinical-context-group i {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 21px;
+  color: var(--olive-soft);
+  stroke-width: 1.65;
+  transition: transform 220ms ease, color 220ms ease;
 }
 
 @media (hover: hover) {
-  .clinical-context-grid li:hover {
-    position: relative;
-    z-index: 2;
-    background: var(--white);
-    box-shadow: 0 18px 32px rgba(38, 38, 28, 0.13);
-    transform: translateY(-6px) rotateX(2deg);
+  .clinical-context-group li:hover {
+    padding-left: 8px;
+    color: var(--olive);
   }
 
-  .clinical-context-grid li:hover svg {
-    color: var(--white);
-    background: var(--olive);
-    transform: rotate(-7deg) scale(1.08);
+  .clinical-context-group li:hover svg {
+    color: var(--sand);
+    transform: rotate(-8deg) scale(1.08);
   }
 }
 
@@ -785,9 +797,24 @@ h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.23);
 }
 
-.steps li > span {
+.step-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   color: var(--sand);
-  font: 500 11px/1.5 var(--mono);
+}
+
+.step-marker svg,
+.step-marker i {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.55;
+}
+
+.step-marker b {
+  font: 500 10px/1.5 var(--mono);
+  font-weight: 500;
 }
 
 .steps h3 {
@@ -1416,20 +1443,26 @@ footer p {
     font-size: 41px;
   }
 
-  .symptom-grid {
+  .region-list {
     margin-top: 52px;
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .symptom-grid article,
-  .symptom-grid article:nth-child(even) {
-    min-height: 0;
-    padding: 26px 0;
-    border-right: 0;
+  .region-list article,
+  .region-list article:nth-child(3n + 2),
+  .region-list article:nth-child(3n + 3) {
+    min-height: 165px;
+    padding: 24px 18px 26px 0;
+    border-left: 0;
     border-bottom: 1px solid var(--line);
   }
 
-  .symptom-grid article:last-child {
+  .region-list article:nth-child(even) {
+    padding-left: 22px;
+    border-left: 1px solid var(--line);
+  }
+
+  .region-list article:nth-last-child(-n + 2) {
     border-bottom: 0;
   }
 
@@ -1465,13 +1498,8 @@ footer p {
     margin-top: 0;
   }
 
-  .clinical-context-grid {
+  .clinical-context-groups {
     margin-top: 52px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .clinical-context-grid li {
-    min-height: 150px;
   }
 
   .care-path {
@@ -1659,13 +1687,31 @@ footer p {
     border-bottom: 0;
   }
 
-  .clinical-context-grid {
-    grid-template-columns: 1fr;
+  .region-list {
+    display: block;
   }
 
-  .clinical-context-grid li {
+  .region-list article,
+  .region-list article:nth-child(even),
+  .region-list article:nth-child(3n + 2),
+  .region-list article:nth-child(3n + 3) {
     min-height: 0;
-    padding: 22px 18px;
+    padding: 22px 0;
+    border-left: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .region-list article:last-child {
+    border-bottom: 0;
+  }
+
+  .clinical-context-groups {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .clinical-context-group li {
+    min-height: 54px;
   }
 
   .insurance-panel ul {

@@ -27,7 +27,7 @@
 ## 4. Problema e reconhecimento
 
 - **Título:** “O que está limitando seu movimento hoje?”
-- Regiões: joelho, ombro, coluna e outras articulações.
+- Regiões: joelho, ombro, coluna, quadril, punho e mão, pé e tornozelo, com ícones lineares.
 - CTA contextual após o reconhecimento: “Quero avaliar meu caso”.
 
 ## 5. Processo
@@ -67,4 +67,3 @@
 - “Entenda o que sua dor está pedindo.”
 - WhatsApp e telefone.
 - Identificação médica completa e política de privacidade.
-

@@ -21,12 +21,14 @@
 
 ## Problema
 
-**H2:** Quando a dor começa a limitar sua rotina.
+**H2:** Em quais regiões a dor aparece?
 
 - Joelho: dor, inchaço, instabilidade ou dificuldade para caminhar e subir escadas.
 - Ombro: desconforto para elevar o braço, vestir-se, trabalhar ou dormir.
 - Coluna: dor cervical ou lombar que interfere na postura e nas atividades.
-- Outras articulações: rigidez, perda de mobilidade ou dor persistente.
+- Quadril: dor ao caminhar, sentar, levantar ou permanecer na mesma posição.
+- Punho e mão: dor, formigamento, perda de força ou limitação manual.
+- Pé e tornozelo: dor, entorses, instabilidade ou dificuldade para apoiar o peso do corpo.
 
 ## Comorbidades e histórico
 
@@ -34,12 +36,9 @@
 
 Na consulta, condições associadas são consideradas para entender riscos, limitações e possibilidades de cuidado.
 
-- Sobrepeso ou obesidade.
-- Diabetes.
-- Osteoporose.
-- Doenças reumatológicas.
-- Lesões ou cirurgias prévias.
-- Uso contínuo de medicamentos.
+**Condições associadas:** diabetes, osteoporose e doenças reumatológicas.
+
+**Histórico e rotina:** sobrepeso ou obesidade, lesões ou cirurgias prévias e uso contínuo de medicamentos.
 
 ## Processo
 
