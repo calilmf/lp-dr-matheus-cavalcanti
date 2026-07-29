@@ -26,7 +26,7 @@
 - **Tom:** clínico claro, humano e preciso.
 - **Densidade:** média, com respiro e informação prática.
 - **Imagem:** `photo-7645.jpg` como origem do recorte transparente `hero-doctor-cutout.webp`; `photo-7547.jpg` na seção do médico.
-- **Elemento anatômico:** `hero-knee-3d.webp`, render original de joelho em marfim/areia, alpha transparente, decorativo e sem texto.
+- **Elemento anatômico:** `hero-knee-model-v2.webp`, render 3D de joelho em alta resolução, marfim/areia, alpha transparente, decorativo e sem texto.
 - **Iconografia:** ícones lineares apenas na prova rápida e logística.
-- **Movimento:** flutuação/rotação lenta apenas no joelho 3D; animação desativada por `prefers-reduced-motion`.
+- **Movimento:** giro tridimensional curto e flutuação lenta apenas no joelho; animação desativada por `prefers-reduced-motion`.
 - **Regra do CTA:** preservar verbo, destino, prioridade e tracking definidos na estratégia.
