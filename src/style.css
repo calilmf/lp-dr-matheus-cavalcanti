@@ -1220,7 +1220,7 @@ h2 {
 .location-photo {
   margin: 0 0 30px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -1230,7 +1230,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 10%;
 }
 
 .location-actions {
