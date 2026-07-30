@@ -1202,6 +1202,16 @@ h2 {
   gap: clamp(70px, 10vw, 160px);
 }
 
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.locations-phone-block {
+  margin-top: -12px;
+}
+
 .micro-label {
   margin: 0 0 20px;
   color: var(--olive-soft);
@@ -1751,8 +1761,13 @@ footer p {
     display: block;
   }
 
-  .location {
-    margin-bottom: 65px;
+  .locations-list {
+    gap: 48px;
+    margin-bottom: 60px;
+  }
+
+  .locations-list .location {
+    margin-bottom: 0;
   }
 
   .closing {
