@@ -193,19 +193,19 @@
 
       function buildRedirectUrl() {
         const params = new URLSearchParams(window.location.search)
-        const crmUrl = new URL('https://sistema.pulso.marketing/go/dr-matheus-cavalcanti')
+        const whatsappUrl = new URL('https://tintim.link/whatsapp/8ecd6b81-7447-41c1-ab41-56c76e44cfd5/c281f571-2564-42f2-bb8f-8745e005da88')
 
         params.forEach((value, key) => {
-          crmUrl.searchParams.set(key, value)
+          whatsappUrl.searchParams.set(key, value)
         })
 
-        if (!crmUrl.searchParams.has('landing_page_url')) {
+        if (!whatsappUrl.searchParams.has('landing_page_url')) {
           const fallbackPath = window.location.pathname.replace(/agendar\/?$/, '')
-          crmUrl.searchParams.set('landing_page_url', window.location.origin + fallbackPath)
+          whatsappUrl.searchParams.set('landing_page_url', window.location.origin + fallbackPath)
         }
 
-        crmUrl.searchParams.set('mensagem', 'Olá! Quero saber mais informações.')
-        return crmUrl.toString()
+        whatsappUrl.searchParams.set('mensagem', 'Olá! Quero saber mais informações.')
+        return whatsappUrl.toString()
       }
 
       function redirectNow() {
