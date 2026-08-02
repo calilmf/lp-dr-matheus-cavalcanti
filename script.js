@@ -18,6 +18,25 @@ const attribution = Object.fromEntries(
 
 window.dataLayer = window.dataLayer || []
 
+function getSchedulingUrl(source = 'lp') {
+  const destination = new URL('agendar/', window.location.href)
+  const params = new URLSearchParams(window.location.search)
+
+  Object.entries(attribution).forEach(([key, value]) => {
+    params.set(key, value)
+  })
+
+  params.set('landing_page_url', window.location.origin + window.location.pathname)
+  params.set('ponto_conversao', source)
+
+  if (document.referrer) {
+    params.set('referrer_url', document.referrer)
+  }
+
+  destination.search = params.toString()
+  return destination.toString()
+}
+
 function track(event, payload = {}) {
   window.dataLayer.push({
     event,
@@ -29,20 +48,7 @@ function track(event, payload = {}) {
 
 function decorateWhatsappLinks() {
   document.querySelectorAll('a[data-cta]').forEach((link) => {
-    try {
-      const destination = new URL(link.href)
-
-      Object.entries(attribution).forEach(([key, value]) => {
-        if (!destination.searchParams.has(key)) {
-          destination.searchParams.set(key, value)
-        }
-      })
-
-      destination.searchParams.set('cta_position', link.dataset.cta)
-      link.href = destination.toString()
-    } catch {
-      // Mantém o destino original caso o navegador não consiga interpretar a URL.
-    }
+    link.href = getSchedulingUrl(link.dataset.cta)
 
     link.addEventListener('click', () => {
       track('click_whatsapp', {
@@ -54,12 +60,6 @@ function decorateWhatsappLinks() {
 }
 
 function bindSecondaryActions() {
-  document.querySelectorAll('[data-action="phone"]').forEach((link) => {
-    link.addEventListener('click', () => {
-      track('click_phone', { link_url: link.href })
-    })
-  })
-
   document.querySelectorAll('[data-action="map"]').forEach((link) => {
     link.addEventListener('click', () => {
       track('click_map', { link_url: link.href })
