@@ -202,9 +202,9 @@ nav a:focus-visible {
   position: relative;
   isolation: isolate;
   max-width: var(--max);
-  min-height: 735px;
+  min-height: 690px;
   margin: 0 auto;
-  padding: 42px var(--gutter) 78px;
+  padding: 42px var(--gutter) 38px;
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(390px, 0.95fr);
   align-items: center;
